@@ -75,7 +75,7 @@ function draw() {
         }
     
   textSize(40);
-  fill("white");
+  fill("red");
   text("SCORE :" + score, 950, 40);
   
     drawSprites();
@@ -171,7 +171,7 @@ function keyPressed(){
     }
 }
 async function getBackgroundImage() {
-    var response = await fetch('http://worldtimeapi.org/api/timezone/Asia/Tokyo')
+    var response = await fetch('http://worldtimeapi.org/api/timezone/Asia/Kolkata')
     console.log(response)
 
     var responseJSON = await response.json()
